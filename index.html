@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Navinchander Saravanan – Senior Site Reliability Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF2F5;--surface:#fff;--ink:#14212B;--muted:#516270;--line:#D3DCE3;--ok:#177A4F;--accent:#2F5D8A;--warn:#B7791F;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1920;--surface:#16242D;--ink:#E6EDF2;--muted:#9AABB8;--line:#2A3B46;--ok:#4CC38A;--accent:#7FB0E0;--warn:#E3B04B;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1920;--surface:#16242D;--ink:#E6EDF2;--muted:#9AABB8;--line:#2A3B46;--ok:#4CC38A;--accent:#7FB0E0;--warn:#E3B04B;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{padding:64px 0 40px}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 16px 6px 12px;font-weight:600;font-size:15px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 2.4s ease-out 1}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--ok)}100%{box-shadow:0 0 0 14px transparent}}
+h1{font-size:clamp(40px,8vw,76px);font-weight:800;margin:24px 0 12px;letter-spacing:-.02em}
+.role{font-size:clamp(18px,2.4vw,22px);color:var(--muted);max-width:34em;margin:0 0 28px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.uptime{margin-top:48px}
+.uptime p{margin:0 0 10px;color:var(--muted);font-size:15px}
+.bar{display:flex;gap:3px;height:48px}
+.bar a{display:block;border-radius:4px;background:var(--ok);opacity:.55;transition:opacity .15s,transform .15s;min-width:6px}
+.bar a:last-child{opacity:1}
+.bar a:hover,.bar a:focus-visible{opacity:1;transform:scaleY(1.15)}
+.legend{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-top:8px}
+#tip{min-height:1.7em;margin-top:6px;font-weight:600}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(26px,4vw,36px);margin-bottom:28px}
+.about{max-width:42em;font-size:19px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:24px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.when{color:var(--muted);font-size:15px}
+.job h3{font-size:21px;margin-bottom:2px}
+.co{color:var(--accent);font-weight:600;margin:0 0 10px}
+.job ul{margin:0;padding-left:20px;max-width:42em}
+.job li{margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 12px;font-size:15px}
+.certs{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.certs li{padding-left:22px;position:relative}
+.certs li::before{content:"";position:absolute;left:0;top:.6em;width:10px;height:10px;border-radius:50%;background:var(--warn)}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+@media (max-width:640px){.job{grid-template-columns:1fr}.bar{height:40px}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}html{scroll-behavior:auto}.bar a{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <span class="status"><span class="dot" aria-hidden="true"></span>Available for new opportunities</span>
+  <h1>Navinchander Saravanan</h1>
+  <p class="role">Senior Site Reliability Engineer. I keep Windows and multi-cloud infrastructure on AWS, Azure and Google Cloud reliable, automated and easy to operate.</p>
+  <div class="links">
+    <a class="btn primary" href="mailto:navinchander.saravanan@outlook.com">Email me</a>
+    <a class="btn" href="https://linkedin.com/in/navinchanders">LinkedIn</a>
+    <a class="btn" href="tel:+919003083844">+91 90030 83844</a>
+  </div>
+  <div class="uptime">
+    <p>12 years of continuous service. Each block is one role; hover or focus a block to see which.</p>
+    <nav class="bar" id="bar" aria-label="Career timeline"></nav>
+    <div id="tip" aria-live="polite">&nbsp;</div>
+    <div class="legend"><span>May 2014</span><span>Today</span></div>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p class="about">I run production environments with 500–700 cloud instances and 400–500 Windows servers supporting more than 10,000 users. My day-to-day is Terraform, PowerShell, CI/CD, monitoring and incident response. I started in desktop support and data centers, so I know the stack from the hardware up.</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div id="jobs"></div>
+</section>
+
+<section id="projects">
+  <h2>Selected projects</h2>
+  <div class="grid">
+    <div class="card"><h3>AWS infrastructure automation</h3><p>Terraform-based provisioning and repeatable infrastructure operations.</p></div>
+    <div class="card"><h3>EC2 scaling portal</h3><p>Web-based workflow for controlled EC2 instance scaling.</p></div>
+    <div class="card"><h3>GP2 to GP3 EBS automation</h3><p>Automated EBS volume modernization and configuration.</p></div>
+    <div class="card"><h3>Windows infrastructure automation</h3><p>PowerShell-led operational automation for Windows environments.</p></div>
+    <div class="card"><h3>New Relic monitoring dashboards</h3><p>Operational dashboards for visibility and incident response.</p></div>
+    <div class="card"><h3>SMS platform infrastructure</h3><p>Infrastructure support for enterprise messaging services.</p></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="tags">
+    <li>AWS</li><li>Azure</li><li>Google Cloud</li><li>Terraform</li><li>PowerShell</li><li>Kubernetes</li><li>Docker</li><li>GitLab CI/CD</li><li>GitHub</li><li>Windows Server</li><li>IIS</li><li>Active Directory</li><li>New Relic</li><li>CloudWatch</li><li>SCOM</li><li>Incident management</li><li>Disaster recovery</li><li>Cloud migration</li>
+  </ul>
+</section>
+
+<section id="certifications">
+  <h2>Certifications and education</h2>
+  <ul class="certs">
+    <li>AWS Certified Solutions Architect – Associate</li>
+    <li>Microsoft Azure Administrator (AZ-104)</li>
+    <li>Google Cloud Professional Cloud DevOps Engineer</li>
+    <li>Microsoft Certified Solutions Associate (MCSA)</li>
+    <li>B.Tech, Information Technology, SKP Engineering College, Tiruvannamalai (2014)</li>
+  </ul>
+</section>
+
+<footer>Based in Chennai, Tamil Nadu, India · <a href="mailto:navinchander.saravanan@outlook.com">navinchander.saravanan@outlook.com</a></footer>
+</div>
+
+<script>
+const roles=[
+ {t:"System Engineer",c:"Sysco",d:"May 2014 – Feb 2015",w:9,b:["Managed and monitored systems, operating systems and system management tools.","Ran proactive availability checks and worked with developers on performance bottlenecks."]},
+ {t:"Desktop Support Engineer",c:"Mobius Knowledge Services",d:"Mar 2015 – Jan 2016",w:10,b:["Supported Windows XP and 7 clients and troubleshot Outlook, printers, hardware and network issues.","Managed support tickets and followed up until service was restored."]},
+ {t:"Data Center Operator",c:"Crown Solutions India",d:"Jan 2016 – Dec 2017",w:23,b:["Deployed application releases to about 766 bank branches using approved scripts and packages.","Monitored Oracle alert logs and production servers; resolved L1/L2 incidents."]},
+ {t:"Server Administrator",c:"Renovision Automation",d:"Dec 2017 – Dec 2018",w:12,b:["Configured and hardened Windows Server 2008 R2 to 2016 and ran security health checks.","Administered Active Directory, DNS and DHCP and reviewed IBM PureFlex health reports."]},
+ {t:"Windows Administrator",c:"Wipro",d:"Dec 2018 – Jun 2022",w:42,b:["Administered Active Directory, Group Policy, clustering, NLB, IIS and Hyper-V on Windows Server 2008 R2 to 2019.","Handled monthly patching through SCCM/WSUS and compliance work within SLAs."]},
+ {t:"Senior Site Reliability Engineer (Windows SRE)",c:"Movate",d:"Jun 2022 – Present",w:53,b:["Manage 500–700 cloud instances and 400–500 Windows servers in production.","Automate delivery with Terraform, PowerShell and CI/CD; monitor with New Relic and CloudWatch.","Lead complex incident investigations, join on-call and mentor junior engineers."]}
+];
+const bar=document.getElementById("bar"),tip=document.getElementById("tip"),jobs=document.getElementById("jobs");
+roles.forEach((r,i)=>{
+  const a=document.createElement("a");
+  a.href="#job"+i;a.style.flex=r.w+" 1 0";a.setAttribute("aria-label",r.t+" at "+r.c+", "+r.d);
+  const show=()=>tip.textContent=r.t+" · "+r.c, hide=()=>tip.innerHTML="&nbsp;";
+  a.addEventListener("mouseenter",show);a.addEventListener("focus",show);a.addEventListener("mouseleave",hide);a.addEventListener("blur",hide);
+  bar.appendChild(a);
+});
+roles.slice().reverse().forEach(r=>{
+  const i=roles.indexOf(r),d=document.createElement("div");
+  d.className="job";d.id="job"+i;
+  d.innerHTML='<div class="when"></div><div><h3></h3><p class="co"></p><ul></ul></div>';
+  d.querySelector(".when").textContent=r.d;
+  d.querySelector("h3").textContent=r.t;
+  d.querySelector(".co").textContent=r.c;
+  r.b.forEach(x=>{const l=document.createElement("li");l.textContent=x;d.querySelector("ul").appendChild(l)});
+  jobs.appendChild(d);
+});
+</script>
+</body>
+</html>
